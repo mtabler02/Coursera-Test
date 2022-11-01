@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <title>Module 2 - Solution</title>
+        
+        <style>
+            
+        /** GENERIC CSS **/
+            * {
+                box-sizing: border-box;
+
+            }
+
+            body {
+                background-color: #CDFFC9;
+            }
+            h1 {
+                font-family: fantasy;
+                font-size: 175%
+                width: auto;
+                margin: 50px;
+                text-align: center;
+                font-style: italic;
+                text-decoration: underline;
+            }
+
+            /** CONTAINER CSS - I had to rewrite this at least 3 times, and there was a lot of internal panic **/
+
+            section {
+                position: relative;
+                padding: 10px;
+            }
+
+            div {
+                border: 3px solid #34FF12;
+                background-color: #95FFAC;
+                width: 100%;
+                height: auto;
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .row {
+                width: 95%
+            }
+
+            p{
+                position: relative;
+                clear: right;
+                padding: 3px 10px 3px 10px;
+            }
+
+            /** SPECIFIC CONTENT CSS **/
+            .name0 {
+                font-family: fantasy;
+                font-size: 125%;
+                text-align: center;
+                font-weight: bold;
+                border: 3px solid #34FF12;
+                float: right;
+                width 100px;
+                padding 5px;
+                margin: 0px;
+                background-color: lawngreen;
+            }
+            .name1 {
+                font-family: fantasy;
+                font-size: 125%;
+                text-align: center;
+                font-weight: bold;
+                border: 3px solid #34FF12;
+                float: right;
+                width 100px;
+                padding 5px;
+                margin: 0px;
+                background-color: lawngreen;
+            }
+            .name2 {
+                font-family: fantasy;
+                font-size: 125%;
+                text-align: center;
+                font-weight: bold;
+                border: 3px solid #34FF12;
+                float: right;
+                width 100px;
+                padding 5px;
+                margin: 0px;
+                background-color: lawngreen;
+            }
+            .description {
+                padding 5px;
+                font-family: H;
+                font-size: 16px;
+                margin: 0px;
+                height: 150px;
+                overflow: auto;
+            }    
+            
+            
+        /**** MEDIA RESPONSIVENESS ****/
+            /** Large Devices **/
+            @media (min-width: 992px) {
+                .col-lg-4 {
+                float: left;
+                width: 33.33%;
+                }
+            }
+            
+            /** Medium Devices **/
+            @media (min-width: 768px) and (max-width: 991px) {
+                .col-md-6 {
+                float: left;
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                } 
+                
+                .col-md-12 {
+                float: left;
+                width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                }
+            }
+                
+            /** Small Devices **/
+            @media (max-width: 767px) {
+                .col-sm-12 {
+                float: left;
+                width: 100%;
+                }
+            }
+            
+            /** I just want to take a moment to say that I say for an entire day 
+                not understanding why my responsive design wasn't working, and it
+                was the tiniest typo...
+                My disappointment is immeasurable, and my day is ruined.**/
+            
+        </style>
+        
+    </head>
+    
+    
+    <body>
+        <h1>Welcome to Vegan Eggs &amp; Ham!</h1>
+        
+        <!--FIRST SECTION-->
+        <section class="col-lg-4 col-md-6 col-sm-12">
+            <div class="row">
+                <p class="name0">Breakfast Blast!</p>
+                <p class="description">A hefty omlette filled with bacon, onion, green peppers, mushrooms, &amp; pepper jack cheese.
+                 All Vegan substitutes of course. Served with a side of smoked vegan sasauge &amp; hashbrowns or mashed potatoes.</p>
+            </div>
+        </section>
+        
+        <!--SECOND SECTION-->
+        <section class="col-lg-4 col-md-6 col-sm-12">
+            <div class="row">
+                <p class="name1">Impossible Burger</p>
+                <p class="description">Try our impossible burger topped with lettuce, tomato, onion, pickle, ketchup, &amp; vegan chedder cheese. 
+                Served with your choice of fies, chips or Side Salad</p>
+            </div>
+        </section>
+        
+        <!--THIRD SECTION-->
+        <section class="col-lg-4 col-md-12 col-sm-12">
+            <div class="row">
+                <p class="name2">Spicy Habanero-Mango Tufo</p>
+                <p class="description">Served with rice &amp; black beans. You may add lettuce, corn, diced tomatoes, onions, cilantro, or extra tofu for an additional charge.</p>
+            </div>
+        </section>
+        
+    </body>
+
+</html>
